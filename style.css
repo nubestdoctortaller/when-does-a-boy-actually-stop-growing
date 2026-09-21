@@ -1,0 +1,239 @@
+:root {
+  --dt-primary: #0E8F6F;
+  --dt-primary-dark: #0A6E55;
+  --dt-header-tint: rgba(14, 143, 111, 0.09);
+  --dt-hover-tint: rgba(14, 143, 111, 0.06);
+  --dt-border: #E5E9E7;
+  --dt-text: #23302B;
+  --dt-text-muted: #5C6863;
+  --dt-bg: #FAFBFA;
+  --dt-card-bg: #FFFFFF;
+  --radius: 14px;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: var(--dt-bg);
+  color: var(--dt-text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrapper {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 3rem;
+}
+
+.card {
+  background: var(--dt-card-bg);
+  border: 1px solid var(--dt-border);
+  border-radius: var(--radius);
+  padding: 2rem 1.75rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 3px rgba(16, 24, 21, 0.04);
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--dt-primary-dark);
+  margin: 0 0 0.5rem;
+}
+
+h1 {
+  font-size: 1.9rem;
+  line-height: 1.25;
+  margin: 0 0 1.1rem;
+  color: var(--dt-text);
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin: 0 0 0.35rem;
+  color: var(--dt-text);
+}
+
+p {
+  margin: 0 0 1rem;
+  font-size: 1.03rem;
+}
+
+ul {
+  margin: 0 0 1.4rem;
+  padding-left: 1.3rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+strong {
+  color: var(--dt-primary-dark);
+}
+
+.cta {
+  display: inline-block;
+  background: var(--dt-primary);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0.85em 1.5em;
+  border-radius: 999px;
+  transition: background-color 0.15s ease, transform 0.1s ease;
+}
+
+.cta:hover {
+  background: var(--dt-primary-dark);
+  transform: translateY(-1px);
+}
+
+.cta:active {
+  transform: translateY(0);
+}
+
+/* Calculator */
+
+.calc-sub {
+  color: var(--dt-text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.field-row {
+  margin-bottom: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+label {
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: var(--dt-text);
+}
+
+input[type="number"] {
+  padding: 0.75em 0.9em;
+  border: 1px solid var(--dt-border);
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: inherit;
+  color: var(--dt-text);
+  background: #fff;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+input[type="number"]:focus {
+  outline: none;
+  border-color: var(--dt-primary);
+  box-shadow: 0 0 0 3px var(--dt-header-tint);
+}
+
+.btn-calc {
+  width: 100%;
+  padding: 0.85em 1em;
+  background: var(--dt-primary);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.btn-calc:hover {
+  background: var(--dt-primary-dark);
+}
+
+.btn-calc:disabled {
+  background: var(--dt-border);
+  color: var(--dt-text-muted);
+  cursor: not-allowed;
+}
+
+.result {
+  margin-top: 1.3rem;
+  padding: 1.1em 1.2em;
+  background: var(--dt-header-tint);
+  border: 1px solid rgba(14, 143, 111, 0.25);
+  border-radius: 10px;
+}
+
+.result.error {
+  background: #FDEEEE;
+  border-color: #E8B4B4;
+  color: #8A2A2A;
+}
+
+.result-headline {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--dt-primary-dark);
+  margin: 0 0 0.25rem;
+}
+
+.result-range {
+  font-size: 0.92rem;
+  color: var(--dt-text-muted);
+  margin: 0;
+}
+
+.disclaimer {
+  font-size: 0.85rem;
+  color: var(--dt-text-muted);
+  margin: 1.2rem 0 0;
+}
+
+.site-footer {
+  text-align: center;
+  color: var(--dt-text-muted);
+  font-size: 0.88rem;
+  padding: 1rem 0;
+}
+
+.site-footer a {
+  color: var(--dt-primary-dark);
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    padding: 1.5rem 1rem 2.5rem;
+  }
+  .card {
+    padding: 1.5rem 1.25rem;
+  }
+  h1 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .cta,
+  .btn-calc,
+  input[type="number"] {
+    transition: none;
+  }
+}
