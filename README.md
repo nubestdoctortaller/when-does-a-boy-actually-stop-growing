@@ -1,4 +1,5 @@
 When Does a Boy Actually Stop Growing?
+
 Most parents have a rough idea: “somewhere around 18.” But the real answer is a lot more interesting than a birthday.
 
 What actually decides a boy's final height isn't the calendar — it's his growth plates. These are thin bands of cartilage near the ends of the long bones, and as long as they stay open, there's still room to grow. Once rising testosterone (and the estrogen it converts into) causes them to fuse, height is locked in for good — often years before anyone notices it happening.
